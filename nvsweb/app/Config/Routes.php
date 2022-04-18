@@ -23,21 +23,21 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-$routes->get('users-list', 'UserCrud::index');
-$routes->get('user-form', 'UserCrud::create');
-$routes->post('submit-form', 'UserCrud::store');
-$routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
-$routes->post('update', 'UserCrud::update');
-$routes->get('delete/(:num)', 'UserCrud::delete/$1');
+// custom routes
+$routes->get('/', 'Laptop::index',['filter' => 'authGuard']);
+$routes->get('/signup', 'SignupController::index');
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/logout', 'LogoutController::index',['filter' => 'authGuard']);
+$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 
 
-$routes->get('/', 'Laptop::index');
-$routes->get('laptop-view', 'Laptop::index');
-$routes->get('laptop-issue-form', 'Laptop::create');
-$routes->post('laptop-issue-Submitform', 'Laptop::store');
-$routes->get('laptop-delete/(:num)', 'Laptop::delete/$1');
-$routes->get('laptop-edit-view/(:num)', 'Laptop::singleUser/$1');
-$routes->post('laptop-update', 'Laptop::update');
+#$routes->get('/', 'Laptop::index');
+$routes->get('laptop-view', 'Laptop::index',['filter' => 'authGuard']);
+$routes->get('laptop-issue-form', 'Laptop::create',['filter' => 'authGuard']);
+$routes->post('laptop-issue-Submitform', 'Laptop::store',['filter' => 'authGuard']);
+$routes->get('laptop-delete/(:num)', 'Laptop::delete/$1',['filter' => 'authGuard']);
+$routes->get('laptop-edit-view/(:num)', 'Laptop::singleUser/$1',['filter' => 'authGuard']);
+$routes->post('laptop-update', 'Laptop::update',['filter' => 'authGuard']);
 
 /*
  * --------------------------------------------------------------------

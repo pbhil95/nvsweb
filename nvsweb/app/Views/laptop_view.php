@@ -8,9 +8,10 @@
 </head>
 <body>
 <div class="container mt-4">
-    <div class="d-flex justify-content-end">
-        <a href="<?php echo site_url('/laptop-issue-form') ?>" class="btn btn-success mb-2">Issue Laptop</a>
-	</div>
+<div class="d-flex bd-highlight mb-3">
+  <div class="bd-highlight"><a href="<?php echo site_url('/laptop-issue-form') ?>" class="btn btn-success mb-2">Issue Laptop</a></div>
+  <div class="ml-auto bd-highlight"><a href="<?php echo site_url('/logout') ?>" class="btn btn-danger mb-2">Logout</a></div>
+</div>
     <?php
      if(isset($_SESSION['msg'])){
         echo $_SESSION['msg'];
