@@ -10,7 +10,7 @@
       max-width: 500px;
     }
   </style>
-  <title>Codeigniter Login with Email/Password Example</title>
+  <title>NVS WEB</title>
 </head>
 
 <body>
