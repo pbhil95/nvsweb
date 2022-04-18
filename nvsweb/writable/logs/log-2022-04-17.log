@@ -46,3 +46,17 @@ Main connection [MySQLi]: No connection could be made because the target machine
 #8 C:\xampp\htdocs\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+ERROR - 2022-04-17 22:37:48 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-04-17 22:37:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\Laptop.php(10): CodeIgniter\BaseModel->findAll()
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Laptop->index()
+#6 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laptop))
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#10 {main}
