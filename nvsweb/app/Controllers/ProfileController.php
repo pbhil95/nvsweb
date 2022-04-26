@@ -7,7 +7,7 @@ class ProfileController extends Controller
     public function index()
     {
         $session = session();
-        return redirect()->to('/laptop-view');
+        return redirect()->to('/ludoo-view');
         #echo "Hello : ".$session->get('name');
     }
 }
