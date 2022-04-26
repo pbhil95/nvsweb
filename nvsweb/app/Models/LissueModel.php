@@ -7,5 +7,5 @@ class LissueModel extends Model
     protected $primaryKey = 'Id';
     
     protected $allowedFields = ['StaffName', 'LaptopNo',
-    'laptopNo','IssueDate','ReturnDate'];
+    'IssueDate','ReturnDate'];
 }

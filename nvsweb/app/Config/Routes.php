@@ -24,7 +24,7 @@ $routes->set404Override();
 $routes->setAutoRoute(true);
 
 // custom routes
-$routes->get('/', 'Laptop::index',['filter' => 'authGuard']);
+$routes->get('/', 'Laptop::main');
 $routes->get('/signup', 'SignupController::index');
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/logout', 'LogoutController::index',['filter' => 'authGuard']);
@@ -38,6 +38,14 @@ $routes->post('laptop-issue-Submitform', 'Laptop::store',['filter' => 'authGuard
 $routes->get('laptop-delete/(:num)', 'Laptop::delete/$1',['filter' => 'authGuard']);
 $routes->get('laptop-edit-view/(:num)', 'Laptop::singleUser/$1',['filter' => 'authGuard']);
 $routes->post('laptop-update', 'Laptop::update',['filter' => 'authGuard']);
+
+
+$routes->get('ludoo-view', 'Ludoo::index',['filter' => 'authGuard']);
+$routes->get('ludoo-entry-form', 'Ludoo::create',['filter' => 'authGuard']);
+$routes->post('ludoo-entry-Submitform', 'Ludoo::store',['filter' => 'authGuard']);
+$routes->get('ludoo-delete/(:num)', 'Ludoo::delete/$1',['filter' => 'authGuard']);
+$routes->get('ludoo-edit-view/(:num)', 'Ludoo::singleUser/$1',['filter' => 'authGuard']);
+$routes->post('ludoo-update', 'Ludoo::update',['filter' => 'authGuard']);
 
 /*
  * --------------------------------------------------------------------

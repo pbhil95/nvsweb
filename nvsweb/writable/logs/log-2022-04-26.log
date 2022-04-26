@@ -1,0 +1,63 @@
+CRITICAL - 2022-04-26 08:34:44 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 E:\GitHubRepos\nvsweb\nvsweb\spark(45): require('E:\\GitHubRepos\\...')
+#2 {main}
+CRITICAL - 2022-04-26 08:35:42 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 E:\GitHubRepos\nvsweb\nvsweb\spark(45): require('E:\\GitHubRepos\\...')
+#2 {main}
+CRITICAL - 2022-04-26 02:05:13 --> Invalid file: issue_ludoo.php
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('issue_ludoo.php')
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('issue_ludoo', Array, true)
+#2 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\Ludoo.php(15): view('issue_ludoo')
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Ludoo->create()
+#4 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ludoo))
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#8 {main}
+CRITICAL - 2022-04-26 02:05:44 --> Invalid file: issue_ludoo.php
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('issue_ludoo.php')
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('issue_ludoo', Array, true)
+#2 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\Ludoo.php(15): view('issue_ludoo')
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Ludoo->create()
+#4 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ludoo))
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#8 {main}
+CRITICAL - 2022-04-26 02:06:18 --> Invalid file: issue_ludoo.php
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('issue_ludoo.php')
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('issue_ludoo', Array, true)
+#2 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\Ludoo.php(15): view('issue_ludoo')
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Ludoo->create()
+#4 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ludoo))
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#8 {main}
+ERROR - 2022-04-26 07:39:42 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-04-26 07:39:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\SigninController.php(21): CodeIgniter\BaseModel->first()
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\SigninController->loginAuth()
+#6 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#10 {main}
+ERROR - 2022-04-26 10:10:09 --> Column 'StaffName' cannot be null
+CRITICAL - 2022-04-26 10:13:17 --> There is no data to insert.
+#0 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 E:\GitHubRepos\nvsweb\nvsweb\app\Controllers\Ludoo.php(29): CodeIgniter\Model->insert(Array)
+#3 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Ludoo->store()
+#4 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ludoo))
+#5 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\GitHubRepos\nvsweb\nvsweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 E:\GitHubRepos\nvsweb\nvsweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('E:\\GitHubRepos\\...')
+#8 {main}

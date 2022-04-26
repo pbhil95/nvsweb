@@ -52,5 +52,10 @@ class Laptop extends Controller
         $lissueModel = new lissueModel();
         $data['lapdel'] = $lissueModel->where('Id', $id)->delete($id);
         return $this->response->redirect(site_url('/laptop-view'));
-    }    
+    }
+    
+    public function main()
+    {
+        return view('main_view');
+    }
 }
